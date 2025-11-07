@@ -6,3 +6,42 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+#image1 {
+    filter:grayscale(100%)
+    transition: 0.5%;
+}
+#image2 {
+    filter: blur(5px)
+}
+#image2:hover {
+    filter: unset;
+}
+#image3 {
+    filter: drop-shadow(100%)
+}
+@keyframes color-rotate {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg);
+    }
+}
+
+#image4 {
+    animation: color-rotate 4s linear;
+    animation-iteration-count: infinite;
+}
+#div1 {
+    background-color: aliceblue;
+    color: azure;
+    width: 200px;
+    height: 200px;
+    filter: blur(4px);
+}
+
+#div2 {
+    font-size: 60px;
+    filter: drop-shadow(0px 10px 3px red);
+}
+
